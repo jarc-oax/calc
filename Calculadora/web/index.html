@@ -1,0 +1,70 @@
+<!--/*------------------------------------------------------------*/
+/*			Universidad de la Sierra Sur          */
+/*Autor:Bastida Jiménez Obdulia				      */								  
+/*Fecha de ceración: 26 abril 2018   		              */
+/*Fecha de modificación: 27 de abril 2018		      */
+/*Correo: obdulia.bjimenez@gmail.com     		      */
+/*Descripción: Calculadora usando servlets                    */
+/*------------------------------------------------------------*/
+-->
+
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="resource/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resource/font-awesome-4.7.0/css/font-awesome.min.css">
+        <script src="resource/js/bootstrap.min.js"></script>
+    </head>
+    
+    <body>
+        <form action="CalculadoraServletVista" method="get" name="pantalla">
+               
+       
+            <div >
+            <table style="background-color: grey" >
+                <tr>
+                    <td colspan="5"  ><input type="text" name="pantalla" style="width: 200px "></td>
+                </tr>
+                <tr>
+                    <td><input class="btn btn-info" type="button" value="1" onclick="pantalla.value+='1'" ></td>
+                    <td><input class="btn btn-info" type="button" value="2" onclick="pantalla.value+='2'"></td>
+                    <td><input class="btn btn-info" type="button" value="3" onclick="pantalla.value+='3'"></td>
+                     <td><input class="btn btn-info" type="button" value="C" onclick="pantalla.value=''"></td>
+                   
+                </tr>
+                
+                <tr>
+                    <td><input class="btn btn-info" type="button" value="4" onclick="pantalla.value+='4'"></td>
+                    <td><input class="btn btn-info" type="button" value="5" onclick="pantalla.value+='5'"></td>
+                    <td><input class="btn btn-info" type="button" value="6" onclick="pantalla.value+='6'"></td>
+                    <td><input class="btn btn-info" type="button" value="+" onclick="pantalla.value+='+'"></td>
+                    
+                </tr>
+                <tr>
+                    <td><input class="btn btn-info" type="button" value="7" onclick="pantalla.value+='7'"></td>
+                    <td><input class="btn btn-info" type="button" value="8" onclick="pantalla.value+='8'"></td>
+                    <td><input class="btn btn-info" type="button" value="9" onclick="pantalla.value+='9'"></td>
+                    <td><input class="btn btn-info" type="button" value="-" onclick="pantalla.value+='-'"></td>
+                    
+                </tr>
+                <tr>
+                   
+                    <td><input class="btn btn-info" type="button" value="0" onclick="pantalla.value+='0'"></td>
+                    <td><input class="btn btn-info" type="submit" value="=" ></td>
+                    <td><input class="btn btn-info" type="button" value="/" onclick="pantalla.value+='/'"></td>
+                    <td><input class="btn btn-info" type="button" value="*" onclick="pantalla.value+='*'"></td>
+                    
+                </tr>
+            </table>
+                
+        </div>
+        </form>
+    </body>
+    
+</html>
